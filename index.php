@@ -9,7 +9,7 @@
 	</script>
 </head>
 <body>
-<div>
+
 	
   <div class="camera">
     <video id="video">Video stream not available.</video>
@@ -18,10 +18,8 @@
 
   <canvas id="canvas"></canvas>
   <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box."> 
+  <img id="photo" alt="The screen capture will appear in this box."> 
   </div>
 
-
-</div>
 </body>
 </html>
