@@ -20,8 +20,8 @@
   var startbutton = null;
 
   function startup() {
-    video = document.getElementById('video');
-    canvas = document.getElementById('canvas');
+    video = document.createElement('video');
+    canvas = document.createElement('canvas');
     photo = document.getElementById('photo');
     startbutton = document.getElementById('startbutton');
 
@@ -85,6 +85,7 @@
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     var data = canvas.toDataURL('image/png');
+
     photo.setAttribute('src', data);
   }
   
@@ -99,16 +100,19 @@
     if (width && height) {
       canvas.width = width;
       canvas.height = height;
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
       context.drawImage(video, 0, 0, width, height);
-    
-      var data = canvas.toDataURL('image/png');
-      photo.setAttribute('src', data);
+      var data = canvas.toDataURL("image/png;base64");
+      data = data.replace("image/png", "image/octet-stream");
+      document.location.href = data;
+      document.body.removeChild(canvas)
+      //photo.setAttribute('src', data);
     } else {
       clearphoto();
     }
   }
 
-  // Set up our event listener to run the startup process
-  // once loading is complete.
+
   window.addEventListener('load', startup, false);
 })();

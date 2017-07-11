@@ -7,29 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "capture.js",
-			"settings":
-			{
-				"buffer_size": 1904,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "navigator.getUserMedia("
-			}
-		},
-		{
-			"contents": "<html>\n<head>\n\t\n<video id=\"video\"></video>\n<canvas id=\"canvas\" style=\"display:none;\"></canvas>\n<div id=\"buttoncontent\"></div>\n<button id=\"startbutton\">CAPTURE</button>\n\n<script type=\"capture.js\"></script>\n</head>\n\n</html>",
-			"file": "index.html",
-			"file_size": 221,
-			"file_write_time": 131438115140548516,
-			"settings":
-			{
-				"buffer_size": 221,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "<html>"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -61,15 +38,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/ishika/dev/slack_app"
-	],
 	"file_history":
 	[
+		"/home/ishika/dev/slack_app/capture.js",
+		"/home/ishika/Downloads/image (1).png",
+		"/home/ishika/Downloads/image",
+		"/home/ishika/Downloads/image (2).png",
+		"/home/ishika/dev/slack_app/index.php",
+		"/home/ishika/dev/slack_app/main.css",
+		"/home/ishika/.ssh/config",
+		"/home/ishika/dev/slack_app/slack_app",
 		"/home/ishika/dev/slack_app/enableWebcam.js",
 		"/home/ishika/dev/slack_app/index.html",
-		"/home/ishika/dev/slack_app/main.css",
 		"/home/ishika/dev/slack_app/enableCamera",
 		"/home/ishika/dev/xebia/simn-web/app/js/app.js",
 		"/home/ishika/dev/xebia/simn-web/app/mocks/login/login.json",
@@ -83,7 +63,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -97,6 +77,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"video",
 			"BaseUrl",
 			"baseUrl"
 		],
@@ -116,69 +97,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "capture.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1904,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1904,
-								1904
-							]
-						],
-						"settings":
-						{
-							"auto_name": "navigator.getUserMedia(",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 377.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 221,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								193,
-								193
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<html>",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -256,7 +176,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 238.0,
