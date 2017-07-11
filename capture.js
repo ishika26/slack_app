@@ -106,6 +106,7 @@
       var data = canvas.toDataURL("image/png;base64");
       data = data.replace("image/png", "image/octet-stream");
       document.location.href = data;
+      
       document.body.removeChild(canvas)
       //photo.setAttribute('src', data);
     } else {
